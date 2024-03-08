@@ -6,10 +6,10 @@ import * as fs from "fs";
 
 export const dynamic = "force-dynamic";
 
-const regPath = join(process.cwd(), "public/dappsimage/AtypDisplay-Regular.ttf");
+const regPath = join(process.cwd(), "public/AtypDisplay-Regular.ttf");
 let reg = fs.readFileSync(regPath);
 
-const boldPath = join(process.cwd(), "public/dappsimage/AtypDisplay-Semibold.ttf");
+const boldPath = join(process.cwd(), "public/AtypDisplay-Semibold.ttf");
 let bold = fs.readFileSync(boldPath);
 
 export async function GET(req: NextRequest) {
