@@ -31,13 +31,14 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
       return new NextResponse(getFrameHtmlResponse({
         image: {
           src: `${process.env.HOST}/nowallet.png`,
-          aspectRatio: '1:1'
         },
       }));
     } else {
       console.log('The array is not empty');
     }
-    //const addresses = ['0xfb37feebfc1d441901f57e59a59e77b8e28906ae'];
+
+    //For testing with address having LXP
+    const addresses = ['0xfb37feebfc1d441901f57e59a59e77b8e28906ae'];
 
     // Prepare user data for adding/updating user records
     const userData = {
