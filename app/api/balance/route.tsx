@@ -45,7 +45,7 @@ export async function GET(req: NextRequest) {
                     fontSize: 60,
                 }}
             >
-                Your LXP Balance {balance}
+                LXP Balance: {balance}
             </div>
         </div>,
         {

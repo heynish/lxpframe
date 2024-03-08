@@ -58,7 +58,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
           );
         })
       )
-    ).some((balance) => !!balance);
+    ).reduce((acc, balance) => acc + BigInt(balance), BigInt(0));
 
     console.log('lxpBalance', lxpBalance);
 
