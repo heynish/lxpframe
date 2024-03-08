@@ -39,6 +39,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
 
     //For testing with address having LXP
     const addresses = ['0xfb37feebfc1d441901f57e59a59e77b8e28906ae'];
+    accountAddresses = addresses;
 
     // Prepare user data for adding/updating user records
     const userData = {
