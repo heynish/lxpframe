@@ -12,7 +12,7 @@ const frameMetadata = getFrameMetadata({
   ],
 
   image: {
-    src: `${process.env.HOST}/bg.png`
+    src: `${process.env.HOST}/1.png`
   },
   post_url: `${process.env.HOST}/api`,
 });
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'View Your LXP Balance',
     description: 'View Your LXP Balance',
-    images: `${process.env.HOST}/bg.png`,
+    images: `${process.env.HOST}/1.png`,
   },
   other: {
     ...frameMetadata,
@@ -50,7 +50,7 @@ export default function Page() {
           position: 'relative' // Needed for next/image to work properly
         }}>
           <Image
-            src='/bg.png'
+            src='/1.png'
             alt='Background Image'
             width={1024}  // replace with the actual image width
             height={1024} // replace with the actual image height
