@@ -18,7 +18,7 @@ const frameMetadata = getFrameMetadata({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(`${process.env.NEXT_PUBLIC_HOST}`),
+  metadataBase: new URL(`${process.env.HOST}`),
   title: 'View Your LXP Balance',
   description: 'View Your LXP Balance',
   openGraph: {
