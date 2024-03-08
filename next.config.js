@@ -4,6 +4,6 @@ module.exports = {
 
 module.exports = {
   images: {
-    domains: ['https://gatedmint.vercel.app'],
+    domains: ['https://lxpframe.vercel.app'],
   },
 };
